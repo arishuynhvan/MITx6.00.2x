@@ -17,3 +17,4 @@
 
 - [ ] Set up a static blog
 - [ ] Set up local git repo
+- [ ] Research and set up for TTD in Python
