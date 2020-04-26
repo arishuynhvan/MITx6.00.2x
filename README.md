@@ -15,5 +15,5 @@
 
 ## Todos
 
-[]Set up a static blog
-[]Set up local git repo
+- [ ] Set up a static blog
+- [ ] Set up local git repo
