@@ -3,8 +3,8 @@
 
 ## Objectives
 
-1. To record my study 
-2. To organize personal notes
+1. To record my study notes
+2. To organize my thought process and attempts at solving the problems 
 3. To maintain accountability with weekly to-do lists and track progress
 
 ## Tools
@@ -12,15 +12,16 @@
 1. Jupyter Notebook
 2. Jekyll or some other static pages for blogging
 3. Graphic creating and editing software
-4. Python 3.5
-5. Virtual Environment in anaconda
+4. Python 3.8
+5. Virtual Environment in anaconda (set to Python 3.8)
+6. ```nb_conda``` to manage conda environment-based kernels inside the Jupyter Notebook
 
 ## Todos
 
-- [ ] Set up a static blog
 - [x] Set up local git repo
 - [ ] Research and set up for TTD in Python
 - [x] Create virtual environment for practice exercises, homework, problems, midterm and exams
+- [x] Set up anaconda so it will open jupyter notebook in the folder of the virtual environment instead of ```C:/Users/<username>```
 
 ## Setup
 
@@ -38,10 +39,12 @@ Activating a conda environment modifies the PATH and shell variables to point to
 
 To install extra Python packages ```conda install -n yourenvname [package]```
 
-To deactivate the environment ```conda remove -n yourenvname -all```
+To deactivate the environment ```conda deactivate```
+
+To remove the environment ```conda remove -n yourenvname --all```
 
 #### Name
-MITx6002xPractice
+MITx6002xPy38
 
 #### Directory
 
@@ -56,26 +59,47 @@ MITx6002xPractice
 
 ### Jupyter Notebook
 
-#### [Start Jupyter Notebook from within a conda environment](https://stackoverflow.com/a/39070588)
+#### Setup for Jupyter Notebook to automatically manage new environments
 
-Activate a conda environment in your terminal using source activate <environment name>. This sets the default environment for Jupyter Notebooks. Otherwise, the [Root] environment is the default.
+After activating the conda environment, run ```conda install nb_conda```
 
-![jupyter notebooks home screen, conda tab, create new environment](https://i.stack.imgur.com/0Qgkx.png)
-
-After activating the conda environment
-
-```python -m ipykernal install --user --name=MITx6002xPractice```
+Then run ```python -m ipykernal install --user --name=yourenvname```
 
 It will return the directory where ipykernel stores the kernelspec of the new virutal environment. The message may look like below
 
-``Installed kernelspec MITx6002xPractice in C:\Users\<username>\AppData\Roaming\jupyter\kernels\mitx6002xpractice``
+``Installed kernelspec MITx6002xPractice in C:\Users\<username>\AppData\Roaming\jupyter\kernels\<yourenvname>``
 
-Then start the jupyter kernal with ```jupyter notebook```
+(Optional) [Change the default directory of jupyter notebook launched in Anaconda Navigator](https://www.planetofbits.com/python/change-jupyter-notebook-startup-folder-anaconda/)
 
-You can also create new environments from within Jupyter Notebook (home screen, Conda tab, and then click the plus sign).
+   1. Open Anaconda Navigator -> Environments
+   2. Click on any ▶ button and choose ```Open Terminal```
+   3. Type in ```jupyter notebook --generate-config```
+   4. Move to where the file  ```jupyter_notebook_config.py``` was written and type ```start .```
+   5. Open the file in an editor
+   6. Find the line ```#c.NotebookApp.notebook_dir``` and uncomment it by removing **#**
+   7. Add the new directory where you want to the base folder of jupyter notebook to be located upon being launched. The line should now look something like ```c.NotebookApp.notebook_dir = 'D:\Python3'```
+   
+#### Start Jupyter Notebook from Anaconda Navigator (recommended)
 
-And you can create a notebook in any environment you want. Select the "Files" tab on the home screen and click the "New" dropdown menu, and in that menu select a Python environment from the list.
+1. Start Anaconda Navigator
+2. Click on ```Environments``` on the left panel
+3. Click on the ▶ next to the environment you want to open jupyter notebook in that environment (must have nb_conda installed already)
 
-![check the new environment in jupyter](https://i.stack.imgur.com/otShT.png)
+![Anaconda Env OpenJupyterNotebook](img/AnacondaEnvOpenJupyterNotebook.png)
+
+4. Open the ```Conda``` tab to check that the virtual environment is displayed in jupyter notebook
+   
+![Jupyter Notebook - Conda tab](img/JupyterNotebookCondaTab.png)
+
+5. Go back to the ```Files``` tab and create or open a .ipynb file. If you get stuck if your file is not on the disk where Anaconda launched your jupyter notebook, try [changing the default directory of jupyter notebook launched in Anaconda Navigator](https://www.planetofbits.com/python/change-jupyter-notebook-startup-folder-anaconda/) 
 
 [More info](https://medium.com/@nrk25693/how-to-add-your-conda-environment-to-your-jupyter-notebook-in-just-4-steps-abeab8b8d084)
+
+## Credit
+
+I do not own the theories and exercises presented here. They were taken from the EdX course [Introduction to Computational Thinking and Data Science](https://www.edx.org/course/introduction-to-computational-thinking-and-data-4) and belong to the MIT and professors: 
+   * John Guttag - Dugald C. Jackson Professor of Computer Science and Electrical Engineering
+   * Eric Grimson - Bernard Gordon Professor of Medical Engineering; Professor of Computer Science
+   * Ana Bell - Lecturer, Computer Science and Electrical Engineering
+
+I only provided the solutions and some extra explanations. 
