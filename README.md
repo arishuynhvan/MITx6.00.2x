@@ -11,15 +11,14 @@
 
 1. Jupyter Notebook
 2. Jekyll or some other static pages for blogging
-3. Graphic creating and editing software
-4. Python 3.8
-5. Virtual Environment in anaconda (set to Python 3.8)
-6. ```nb_conda``` to manage conda environment-based kernels inside the Jupyter Notebook
+3. Python 3.7
+4. Virtual Environment in anaconda (set to Python 3.7)
+5. ```nb_conda``` to manage conda environment-based kernels inside the Jupyter Notebook
 
 ## Todos
 
 - [x] Set up local git repo
-- [ ] Research and set up for TTD in Python
+- [ ] Research and set up TTD in Python
 - [x] Create virtual environment for practice exercises, homework, problems, midterm and exams
 - [x] Set up anaconda so it will open jupyter notebook in the folder of the virtual environment instead of ```C:/Users/<username>```
 
@@ -44,17 +43,15 @@ To deactivate the environment ```conda deactivate```
 To remove the environment ```conda remove -n yourenvname --all```
 
 #### Name
-MITx6002xPy38
+MITx6002xPy37
 
 #### Directory
-
-##### Environment
 ```.../MITx6.00.2x/Practice```
 
-##### Third-party libraries
+#### Third-party libraries
 ```path_to_your_anaconda_location/anaconda/envs/yourenvname```
 
-##### Check all environments
+#### Check all environments
 ```conda info -e```
 
 ### Jupyter Notebook
@@ -97,7 +94,7 @@ It will return the directory where ipykernel stores the kernelspec of the new vi
 
 ## Credit
 
-I do not own the theories and exercises presented here. They were taken from the EdX course [Introduction to Computational Thinking and Data Science](https://www.edx.org/course/introduction-to-computational-thinking-and-data-4) and belong to the MIT and professors: 
+I do not own any theories and exercises presented here. They were taken from the EdX course [Introduction to Computational Thinking and Data Science](https://www.edx.org/course/introduction-to-computational-thinking-and-data-4) and belong to the MIT and professors: 
    * John Guttag - Dugald C. Jackson Professor of Computer Science and Electrical Engineering
    * Eric Grimson - Bernard Gordon Professor of Medical Engineering; Professor of Computer Science
    * Ana Bell - Lecturer, Computer Science and Electrical Engineering
