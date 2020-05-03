@@ -92,7 +92,7 @@ It will return the directory where ipykernel stores the kernelspec of the new vi
 
 If you want to run jupyter notebook from the terminal, choose ```Open Terminal``` instead (easier to check if the ipykernel and server is shut down properly or not)
 
-1. Open the ```Conda``` tab to check that the virtual environment is displayed in jupyter notebook
+4. Open the ```Conda``` tab to check that the virtual environment is displayed in jupyter notebook
    
 ![Jupyter Notebook - Conda tab](img/JupyterNotebookCondaTab.png)
 
@@ -102,9 +102,9 @@ If you want to run jupyter notebook from the terminal, choose ```Open Terminal``
 
 ## Credit
 
-I do not own any theories and exercises presented here. They were taken from the EdX course [Introduction to Computational Thinking and Data Science](https://www.edx.org/course/introduction-to-computational-thinking-and-data-4) and belong to the MIT and professors: 
+I do not own any materials, questions and exercises presented here. They were taken from the EdX course [Introduction to Computational Thinking and Data Science](https://www.edx.org/course/introduction-to-computational-thinking-and-data-4) and belong to the MIT and professors: 
    * John Guttag - Dugald C. Jackson Professor of Computer Science and Electrical Engineering
    * Eric Grimson - Bernard Gordon Professor of Medical Engineering; Professor of Computer Science
    * Ana Bell - Lecturer, Computer Science and Electrical Engineering
 
-I only provided the solutions and some extra explanations. 
+I only included my own solutions for the exercises, problems and some extra explanations. Peruse at your discretion.
