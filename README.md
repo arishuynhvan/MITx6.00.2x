@@ -1,6 +1,10 @@
 # MITx 6.00.2x
 [Introduction to Computational Thinking and Data Science - EdX](https://www.edx.org/course/introduction-to-computational-thinking-and-data-4)
 
+## Course textbook
+
+[Guttag, J.V., Introduction to Computation and Programming Using Python, Second Edition - With Application to Understanding Data, MIT Press](https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-second-edition)
+
 ## Objectives
 
 1. To record my study notes
@@ -21,6 +25,7 @@
 - [ ] Research and set up TTD in Python
 - [x] Create virtual environment for practice exercises, homework, problems, midterm and exams
 - [x] Set up anaconda so it will open jupyter notebook in the folder of the virtual environment instead of ```C:/Users/<username>```
+- [ ] Create a TOC since this doc is rather long
 
 ## Setup
 
@@ -78,13 +83,16 @@ It will return the directory where ipykernel stores the kernelspec of the new vi
    
 #### Start Jupyter Notebook from Anaconda Navigator (recommended)
 
+**From Anaconda Navigator**
 1. Start Anaconda Navigator
 2. Click on ```Environments``` on the left panel
 3. Click on the ▶ next to the environment you want to open jupyter notebook in that environment (must have nb_conda installed already)
 
 ![Anaconda Env OpenJupyterNotebook](img/AnacondaEnvOpenJupyterNotebook.png)
 
-4. Open the ```Conda``` tab to check that the virtual environment is displayed in jupyter notebook
+If you want to run jupyter notebook from the terminal, choose ```Open Terminal``` instead (easier to check if the ipykernel and server is shut down properly or not)
+
+1. Open the ```Conda``` tab to check that the virtual environment is displayed in jupyter notebook
    
 ![Jupyter Notebook - Conda tab](img/JupyterNotebookCondaTab.png)
 
